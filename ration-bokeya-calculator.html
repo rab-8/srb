@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
     <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
     <link rel="stylesheet" href="https://masumbillah6778.github.io/css/custom-scrollbar.css">
-    <link rel="icon" type="image/x-icon" href="https://rab-8.github.io/images/calculator.png">
-<title> বকেয়া ক্যালকুলেটর</title>
+    <link rel="icon" type="image/x-icon" href="https://masumbillah6778.github.io/images/icon/music-icon1.png">
+<title>বকেয়া ক্যালকুলেটর</title>
 
 <style>
 :root {
@@ -36,19 +36,20 @@ body {
   background-image: url('https://rab-8.github.io/images/SRB-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
-  min-height: 100vh;
+  margin: 0;
+  height: 100vh;
 }
 
 .app {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.5);
   max-width: 1100px;
   margin: auto;
   border: 2px solid yellow;
   border-radius: 14px;
   padding: 14px;
-  backdrop-filter: blur(3);
+  backdrop-filter: blur(3px);
   box-shadow: 0 5px 22px #0a4a8110;
 }
 
@@ -56,7 +57,6 @@ h1 {
   background-color: rgba(0, 0, 0, 0.4);
   color: yellow;
   margin: 0 0 14px;
-  padding: 14px 8px;
   font-size: clamp(25px, 4.4vw, 48px);
    font-family: 'khalid-bin-olid';
    font-weight: 400;
@@ -73,11 +73,11 @@ h1 {
 }
 
 .control {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   font-family: 'solaiman-lipi';
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 12px;
+  padding: 10px;
   backdrop-filter: blur(3);
 }
 
@@ -86,24 +86,26 @@ label {
   display: block;
   font-weight: 700;
   font-size: clamp(17px, 2.6vw, 25px);
-  margin-bottom: 7px;
+  margin-bottom: 2px;
 }
 
 input, select {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
   color: yellow;
   border-color: yellow;
   font: inherit;
   font-size: clamp(17px, 2.5vw, 24px);
   width: 100%;
   min-width: 0;
-  padding: 9px 12px;
+  padding: 5px 10px;
   backdrop-filter: blur(3);
   border: 1px solid yellow;
   border-radius: 8px;
 }
 
 .table-wrap {
+  ackground-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
   overflow-x: auto;
   border: 1px solid var(--line);
   border-radius: 10px;
@@ -117,7 +119,7 @@ table {
 }
 
 th {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   font-size: clamp(15px, 2.2vw, 23px);
   padding: 11px 8px;
@@ -135,17 +137,20 @@ td:first-child {
 }
 
 td input {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
   border-color: yellow;
 }
 
 .qty {
-  background-color: rgba(0, 0, 0, 0.1);
-  border-color: yellow;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgba(119, 136, 153);
+  cursor: grab;
 }
 
 .amount {
-  background: #e8f1fb;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid yellow;
   text-align: center;
   font-weight: 700;
   border-radius: 7px;
@@ -222,7 +227,7 @@ td input {
 <body>
 <main class="app">
 
-  <h1>🖩 বকেয়া রেশন ক্যালকুলেটর</h1>
+  <h1>🧮 বকেয়া রেশন ক্যালকুলেটর</h1>
 
   <section class="controls">
     <div class="control">
@@ -273,7 +278,7 @@ td input {
 <script>
 const products = [
   { name: "চাল", base: 10.230 },
-  { name: "আটা", base: 8.520 },
+  { name: "আটা", base: 8.523 },
   { name: "তেল", base: 2.540 },
   { name: "চিনি", base: 1.700 },
   { name: "ডাল", base: 1.700 }
